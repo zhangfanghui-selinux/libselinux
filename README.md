@@ -13,3 +13,6 @@
 ---
 ###libnotebook
    >>many app need this lib
+---
+###2.getdefaultcontext
+   >>get default context
