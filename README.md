@@ -16,3 +16,6 @@
 ---
 ###2.getdefaultcontext
    >>get default context
+---
+###3.getdefaulttype
+   >>get default type
