@@ -1,0 +1,6 @@
+This directory contains the policy build script build-sepolicy and
+build-sepolicy.8 describes its usage.
+
+The libnotebook directory contains the library source to allow the
+libselinux and x-setest examples select strings from the $HOME/notebook.conf
+file to save typing log strings. 

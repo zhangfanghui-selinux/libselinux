@@ -1,0 +1,25 @@
+This contains the shared library source code and a simple Makefile.
+The library saves lots of typing context strings etc. when playing with
+the examples. See the config/notebook.conf file that will be installed in the
+$HOME directory for details. You can edit this file to your requirements.
+
+The source code consists of:
+
+	notebook-lib.c - Containing the functions to extract the relevant
+					 information from the $HOME/notebook.conf file.
+
+	rgb-color-conv.c -	Containing routines that convert RGB colours to
+						those suitable for displaying strings in a virtual
+						terminal session. These are only used by
+						selinux_raw_context_to_color_example2.c
+						to show context strings in colour.
+						There is a sample secolor.conf file in the
+						config directory that can be used for testing.
+
+The Makefile will:
+1) Build the libnotebook.so library and install it either in /usr/lib 
+   or /usr/lib64
+
+2) Install the config/notebook.conf file in the $HOME directory.
+   This file contains the context, class etc. strings that are passed to 
+   the various programs available in the notebook source.
